@@ -17,6 +17,7 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.45.0",
     "@types/node": "^20.14.2",
     "@types/react": "^18.2.66",
     "@types/react-anchor-link-smooth-scroll": "1.0.5",
