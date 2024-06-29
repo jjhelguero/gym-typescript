@@ -1,21 +1,5 @@
 import { test, expect, Page } from '@playwright/test';
-
-async function debounceDom(page: Page, pollDelay = 50, stableDelay = 350) {
-  let markupPrevious = '';
-  const timerStart = new Date();
-  let isStable = false;
-  while (!isStable) {
-    const markupCurrent = await page.evaluate(() => document.body.innerHTML);
-    if (markupCurrent == markupPrevious) {
-      const elapsed = new Date().getTime() - timerStart.getTime();
-      isStable = stableDelay <= elapsed;
-    } else {
-      markupPrevious = markupCurrent;
-    }
-    if (!isStable)
-      await new Promise((resolve) => setTimeout(resolve, pollDelay));
-  }
-}
+import { debounceDom } from '../utils/debounceDom';
 
 test.describe('Home Page', () => {
   test.beforeEach(async ({ page }) => {
