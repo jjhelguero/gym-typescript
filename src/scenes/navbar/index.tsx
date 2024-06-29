@@ -43,26 +43,33 @@ export const Navbar = ({
                     page='Home'
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    dataTestId='navbarHome'
                   />
                   <Link
                     page='Benefits'
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    dataTestId='navbarBenefits'
                   />
                   <Link
                     page='Our Classes'
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    dataTestId='navbarOurClasses'
                   />
                   <Link
                     page='Contact Us'
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
+                    dataTestId='navbarContactUs'
                   />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
                   <p>Sign In</p>
-                  <ActionButton setSelectedPage={setSelectedPage}>
+                  <ActionButton
+                    setSelectedPage={setSelectedPage}
+                    dataTestId='navbarBecomeAMemberButton'
+                  >
                     Become a Member
                   </ActionButton>
                 </div>

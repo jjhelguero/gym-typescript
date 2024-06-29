@@ -65,7 +65,7 @@ export const Benefits = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <HText>MORE THAN JUST A GYM.</HText>
+          <HText dataTestId='headerBenefits'>MORE THAN JUST A GYM.</HText>
           <p className='my-5 text-sm'>
             EvoGym is not just a place to work out - it's a community of
             like-minded individuals who share a passion for fitness and
@@ -155,7 +155,10 @@ export const Benefits = ({ setSelectedPage }: Props) => {
             {/* BUTTON */}
             <div className='relative mt-16'>
               <div className='before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles'>
-                <ActionButton setSelectedPage={setSelectedPage}>
+                <ActionButton
+                  setSelectedPage={setSelectedPage}
+                  dataTestId='benefitsJoinNowButton'
+                >
                   Join Now
                 </ActionButton>
               </div>

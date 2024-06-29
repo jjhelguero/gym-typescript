@@ -42,7 +42,7 @@ export const ContactUs = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <HText>
+          <HText dataTestId='headerContactUs'>
             <span className='text-primary-500'>JOIN NOW</span> TO GET IN SHAPE
           </HText>
           <p className='my-5'>
