@@ -3,11 +3,12 @@ import { Page } from '@playwright/test';
 export async function debounceDom(
   page: Page,
   pollDelay = 50,
-  stableDelay = 350,
+  stableDelay = 500,
 ) {
   let markupPrevious = '';
   const timerStart = new Date();
   let isStable = false;
+
   while (!isStable) {
     const markupCurrent = await page.evaluate(() => document.body.innerHTML);
     if (markupCurrent == markupPrevious) {
