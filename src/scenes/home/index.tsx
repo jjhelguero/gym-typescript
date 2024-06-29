@@ -43,6 +43,7 @@ export const Home = ({ setSelectedPage }: Props) => {
             <div className='relative'>
               <div className='before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext'>
                 <img
+                  data-testid='homePageImg'
                   alt='home-page-text'
                   src={HomePageText}
                 />
@@ -51,7 +52,7 @@ export const Home = ({ setSelectedPage }: Props) => {
 
             <p className='mt-8 text-sm'>
               Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-              Studios to get the Body Shapes That you Dream of.. Get Your Dream
+              Studios to get the Body Shapes That you Dream of. Get Your Dream
               Body Now.
             </p>
           </motion.div>
