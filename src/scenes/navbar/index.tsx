@@ -67,11 +67,11 @@ export const Navbar = ({
                 <div className={`${flexBetween} gap-8`}>
                   <p>Sign In</p>
                   <ActionButton
-                    setSelectedPage={setSelectedPage}
+                    onClick={() => setSelectedPage(SelectedPage.ContactUs)}
+                    href={`#${SelectedPage.ContactUs}`}
+                    label='Become a Member'
                     dataTestId='navbarBecomeAMemberButton'
-                  >
-                    Become a Member
-                  </ActionButton>
+                  ></ActionButton>
                 </div>
               </div>
             ) : (

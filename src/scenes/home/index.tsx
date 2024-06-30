@@ -73,11 +73,11 @@ export const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             <ActionButton
-              setSelectedPage={setSelectedPage}
+              onClick={() => setSelectedPage(SelectedPage.ContactUs)}
+              href={`#${SelectedPage.ContactUs}`}
+              label='Join Now'
               dataTestId='homePageJoinNow'
-            >
-              Join Now
-            </ActionButton>
+            ></ActionButton>
             <AnchorLink
               className='text-sm font-bold text-primary-500 underline hover:text-secondary-500'
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}
