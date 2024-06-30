@@ -17,10 +17,12 @@
     "framer-motion": "11.2.12",
     "react": "18.3.1",
     "react-anchor-link-smooth-scroll": "1.0.12",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "react-hook-form": "^7.52.0"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "1.5.0",
+    "@playwright/test": "^1.45.0",
     "@storybook/addon-essentials": "^8.1.10",
     "@storybook/addon-interactions": "^8.1.10",
     "@storybook/addon-links": "^8.1.10",

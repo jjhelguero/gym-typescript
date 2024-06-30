@@ -65,7 +65,7 @@ export const Benefits = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <HText>MORE THAN JUST A GYM.</HText>
+          <HText dataTestId='headerBenefits'>MORE THAN JUST A GYM.</HText>
           <p className='my-5 text-sm'>
             EvoGym is not just a place to work out - it's a community of
             like-minded individuals who share a passion for fitness and
@@ -159,6 +159,7 @@ export const Benefits = ({ setSelectedPage }: Props) => {
                   onClick={() => setSelectedPage(SelectedPage.ContactUs)}
                   href={`#${SelectedPage.ContactUs}`}
                   label='Join Now'
+                  dataTestId='benefitsJoinNowButton'
                 ></ActionButton>
               </div>
             </div>

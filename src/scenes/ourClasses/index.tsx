@@ -71,7 +71,7 @@ export const OurClasses = ({ setSelectedPage }: Props) => {
           }}
         >
           <div>
-            <HText>OUR CLASSES</HText>
+            <HText dataTestId='headerOurClasses'>OUR CLASSES</HText>
             <p className='py-5'>
               EvoGym offers a diverse range of fitness classes, catering to all
               interests and intensity levels. From invigorating hot yoga

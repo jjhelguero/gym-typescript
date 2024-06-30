@@ -43,15 +43,19 @@ export const Home = ({ setSelectedPage }: Props) => {
             <div className='relative'>
               <div className='before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext'>
                 <img
+                  data-testid='homePageImg'
                   alt='home-page-text'
                   src={HomePageText}
                 />
               </div>
             </div>
 
-            <p className='mt-8 text-sm'>
+            <p
+              className='mt-8 text-sm'
+              data-testid='homePageText'
+            >
               Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-              Studios to get the Body Shapes That you Dream of.. Get Your Dream
+              Studios to get the Body Shapes That you Dream of. Get Your Dream
               Body Now.
             </p>
           </motion.div>
@@ -72,11 +76,13 @@ export const Home = ({ setSelectedPage }: Props) => {
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}
               href={`#${SelectedPage.ContactUs}`}
               label='Join Now'
+              dataTestId='homePageJoinNow'
             ></ActionButton>
             <AnchorLink
               className='text-sm font-bold text-primary-500 underline hover:text-secondary-500'
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}
               href={`#${SelectedPage.ContactUs}`}
+              data-testid='homePageLearnMore'
             >
               <p>Learn More</p>
             </AnchorLink>
@@ -91,6 +97,7 @@ export const Home = ({ setSelectedPage }: Props) => {
           <img
             alt='home-pageGraphic'
             src={HomePageGraphic}
+            data-testid='homePageGraphic'
           />
         </div>
       </motion.div>
