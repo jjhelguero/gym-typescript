@@ -14,7 +14,7 @@
   "dependencies": {
     "@heroicons/react": "2.1.4",
     "@storybook/addon-themes": "^8.1.10",
-    "framer-motion": "11.2.12",
+    "framer-motion": "11.11.9",
     "react": "18.3.1",
     "react-anchor-link-smooth-scroll": "1.0.12",
     "react-dom": "18.3.1",
